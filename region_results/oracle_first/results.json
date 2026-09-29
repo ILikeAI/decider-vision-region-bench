@@ -1,0 +1,127 @@
+{
+  "model_load_seconds": 1.65,
+  "guided": false,
+  "force_region": true,
+  "locator_only": true,
+  "fullres_first": false,
+  "oracle_first": true,
+  "tasks": {
+    "close_window": {
+      "task": "Close the application window.",
+      "target_box": [
+        12,
+        11,
+        34,
+        33
+      ],
+      "target_centre": [
+        23,
+        22
+      ],
+      "predicted_click": [
+        24,
+        6
+      ],
+      "click_hits_target": false,
+      "click_error_pixels": 16.0,
+      "total_latency_ms": 1489.77,
+      "steps": [
+        {
+          "pass": 2,
+          "crop": [
+            0,
+            0,
+            512,
+            384
+          ],
+          "choice": "top-left",
+          "expected": "top-left",
+          "correct": true,
+          "probabilities": {
+            "top-left": 0.6964,
+            "top-right": 0.2124,
+            "bottom-left": 0.0653,
+            "bottom-right": 0.026
+          },
+          "latency_ms": 548.64
+        },
+        {
+          "pass": 3,
+          "crop": [
+            0,
+            0,
+            256,
+            192
+          ],
+          "choice": "top-left",
+          "expected": "top-left",
+          "correct": true,
+          "probabilities": {
+            "top-left": 0.8459,
+            "top-right": 0.0899,
+            "bottom-left": 0.0567,
+            "bottom-right": 0.0076
+          },
+          "latency_ms": 235.39
+        },
+        {
+          "pass": 4,
+          "crop": [
+            0,
+            0,
+            128,
+            96
+          ],
+          "choice": "top-left",
+          "expected": "top-left",
+          "correct": true,
+          "probabilities": {
+            "top-left": 0.7173,
+            "top-right": 0.2766,
+            "bottom-left": 0.0035,
+            "bottom-right": 0.0027
+          },
+          "latency_ms": 232.14
+        },
+        {
+          "pass": 5,
+          "crop": [
+            0,
+            0,
+            64,
+            48
+          ],
+          "choice": "top-left",
+          "expected": "top-left",
+          "correct": true,
+          "probabilities": {
+            "top-left": 0.6233,
+            "top-right": 0.1135,
+            "bottom-left": 0.2311,
+            "bottom-right": 0.032
+          },
+          "latency_ms": 236.81
+        },
+        {
+          "pass": 6,
+          "crop": [
+            0,
+            0,
+            32,
+            24
+          ],
+          "choice": "top-right",
+          "expected": "bottom-right",
+          "correct": false,
+          "probabilities": {
+            "top-left": 0.1161,
+            "top-right": 0.3989,
+            "bottom-left": 0.1275,
+            "bottom-right": 0.3576
+          },
+          "latency_ms": 236.79
+        }
+      ]
+    }
+  }
+}

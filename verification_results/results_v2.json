@@ -1,0 +1,123 @@
+{
+  "model_load_seconds": 3.95,
+  "image_size": [
+    1280,
+    504
+  ],
+  "prompt_version": "v2",
+  "options": [
+    "Yes, the specified visible result has appeared",
+    "No, a different change happened instead",
+    "Not yet, a loading or progress state is shown",
+    "Cannot determine from these screenshots"
+  ],
+  "correct": 5,
+  "total": 8,
+  "median_latency_ms": 562.94,
+  "results": [
+    {
+      "case": "chart_opened",
+      "expected": "Yes, the specified visible result has appeared",
+      "predicted": "Yes, the specified visible result has appeared",
+      "correct": true,
+      "probabilities": {
+        "Yes, the specified visible result has appeared": 0.8723,
+        "No, a different change happened instead": 0.1034,
+        "Not yet, a loading or progress state is shown": 0.0068,
+        "Cannot determine from these screenshots": 0.0175
+      },
+      "latency_ms": 665.16
+    },
+    {
+      "case": "chart_no_change",
+      "expected": "Cannot determine from these screenshots",
+      "predicted": "No, a different change happened instead",
+      "correct": false,
+      "probabilities": {
+        "Yes, the specified visible result has appeared": 0.4522,
+        "No, a different change happened instead": 0.4814,
+        "Not yet, a loading or progress state is shown": 0.018,
+        "Cannot determine from these screenshots": 0.0484
+      },
+      "latency_ms": 564.01
+    },
+    {
+      "case": "chart_loading",
+      "expected": "Not yet, a loading or progress state is shown",
+      "predicted": "Not yet, a loading or progress state is shown",
+      "correct": true,
+      "probabilities": {
+        "Yes, the specified visible result has appeared": 0.0096,
+        "No, a different change happened instead": 0.0077,
+        "Not yet, a loading or progress state is shown": 0.98,
+        "Cannot determine from these screenshots": 0.0028
+      },
+      "latency_ms": 562.73
+    },
+    {
+      "case": "chart_wrong_position_closed",
+      "expected": "No, a different change happened instead",
+      "predicted": "No, a different change happened instead",
+      "correct": true,
+      "probabilities": {
+        "Yes, the specified visible result has appeared": 0.2847,
+        "No, a different change happened instead": 0.6415,
+        "Not yet, a loading or progress state is shown": 0.0208,
+        "Cannot determine from these screenshots": 0.0531
+      },
+      "latency_ms": 563.16
+    },
+    {
+      "case": "window_closed",
+      "expected": "Yes, the specified visible result has appeared",
+      "predicted": "No, a different change happened instead",
+      "correct": false,
+      "probabilities": {
+        "Yes, the specified visible result has appeared": 0.1172,
+        "No, a different change happened instead": 0.5052,
+        "Not yet, a loading or progress state is shown": 0.2621,
+        "Cannot determine from these screenshots": 0.1154
+      },
+      "latency_ms": 562.36
+    },
+    {
+      "case": "window_wrong_position_closed",
+      "expected": "No, a different change happened instead",
+      "predicted": "No, a different change happened instead",
+      "correct": true,
+      "probabilities": {
+        "Yes, the specified visible result has appeared": 0.0279,
+        "No, a different change happened instead": 0.7354,
+        "Not yet, a loading or progress state is shown": 0.0276,
+        "Cannot determine from these screenshots": 0.2091
+      },
+      "latency_ms": 560.68
+    },
+    {
+      "case": "position_closed",
+      "expected": "Yes, the specified visible result has appeared",
+      "predicted": "Yes, the specified visible result has appeared",
+      "correct": true,
+      "probabilities": {
+        "Yes, the specified visible result has appeared": 0.6569,
+        "No, a different change happened instead": 0.2613,
+        "Not yet, a loading or progress state is shown": 0.0162,
+        "Cannot determine from these screenshots": 0.0656
+      },
+      "latency_ms": 560.4
+    },
+    {
+      "case": "save_no_feedback",
+      "expected": "Cannot determine from these screenshots",
+      "predicted": "No, a different change happened instead",
+      "correct": false,
+      "probabilities": {
+        "Yes, the specified visible result has appeared": 0.0759,
+        "No, a different change happened instead": 0.4335,
+        "Not yet, a loading or progress state is shown": 0.1582,
+        "Cannot determine from these screenshots": 0.3324
+      },
+      "latency_ms": 567.66
+    }
+  ]
+}

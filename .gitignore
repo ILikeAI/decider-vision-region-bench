@@ -1,0 +1,16 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+
+# Local Python/runtime state
+.venv/
+.pip-cache/
+.uv-cache/
+.hf-cache/
+
+# Downloaded upstream code and model weights
+decider/
+model/
+
+# One-off smoke output
+smoke.json

@@ -1,0 +1,362 @@
+{
+  "model_load_seconds": 12.15,
+  "tasks": {
+    "close_window": {
+      "task": "Close the application window.",
+      "target_box": [
+        12,
+        11,
+        34,
+        33
+      ],
+      "target_centre": [
+        23,
+        22
+      ],
+      "predicted_click": null,
+      "click_hits_target": false,
+      "click_error_pixels": null,
+      "total_latency_ms": 2189.04,
+      "steps": [
+        {
+          "pass": 1,
+          "crop": [
+            0,
+            0,
+            1024,
+            768
+          ],
+          "choice": "bottom-right",
+          "expected": "top-left",
+          "correct": false,
+          "probabilities": {
+            "top-left": 0.0124,
+            "top-right": 0.0822,
+            "bottom-left": 0.0451,
+            "bottom-right": 0.7215,
+            "not visible": 0.1388
+          },
+          "latency_ms": 1192.84
+        },
+        {
+          "pass": 2,
+          "crop": [
+            512,
+            384,
+            1024,
+            768
+          ],
+          "choice": "bottom-right",
+          "expected": "not visible",
+          "correct": false,
+          "probabilities": {
+            "top-left": 0.0005,
+            "top-right": 0.0014,
+            "bottom-left": 0.0058,
+            "bottom-right": 0.9834,
+            "not visible": 0.0088
+          },
+          "latency_ms": 246.58
+        },
+        {
+          "pass": 3,
+          "crop": [
+            768,
+            576,
+            1024,
+            768
+          ],
+          "choice": "bottom-left",
+          "expected": "not visible",
+          "correct": false,
+          "probabilities": {
+            "top-left": 0.0077,
+            "top-right": 0.0166,
+            "bottom-left": 0.688,
+            "bottom-right": 0.1511,
+            "not visible": 0.1365
+          },
+          "latency_ms": 242.89
+        },
+        {
+          "pass": 4,
+          "crop": [
+            768,
+            672,
+            896,
+            768
+          ],
+          "choice": "top-right",
+          "expected": "not visible",
+          "correct": false,
+          "probabilities": {
+            "top-left": 0.0103,
+            "top-right": 0.9098,
+            "bottom-left": 0.0091,
+            "bottom-right": 0.0309,
+            "not visible": 0.04
+          },
+          "latency_ms": 247.12
+        },
+        {
+          "pass": 5,
+          "crop": [
+            832,
+            672,
+            896,
+            720
+          ],
+          "choice": "not visible",
+          "expected": "not visible",
+          "correct": true,
+          "probabilities": {
+            "top-left": 0.0259,
+            "top-right": 0.1316,
+            "bottom-left": 0.1551,
+            "bottom-right": 0.2659,
+            "not visible": 0.4215
+          },
+          "latency_ms": 259.61
+        }
+      ]
+    },
+    "new_chart": {
+      "task": "Open a new chart.",
+      "target_box": [
+        832,
+        57,
+        994,
+        94
+      ],
+      "target_centre": [
+        913,
+        75
+      ],
+      "predicted_click": null,
+      "click_hits_target": false,
+      "click_error_pixels": null,
+      "total_latency_ms": 1262.1,
+      "steps": [
+        {
+          "pass": 1,
+          "crop": [
+            0,
+            0,
+            1024,
+            768
+          ],
+          "choice": "top-right",
+          "expected": "top-right",
+          "correct": true,
+          "probabilities": {
+            "top-left": 0.0184,
+            "top-right": 0.6689,
+            "bottom-left": 0.0202,
+            "bottom-right": 0.1772,
+            "not visible": 0.1153
+          },
+          "latency_ms": 253.98
+        },
+        {
+          "pass": 2,
+          "crop": [
+            512,
+            0,
+            1024,
+            384
+          ],
+          "choice": "top-right",
+          "expected": "top-right",
+          "correct": true,
+          "probabilities": {
+            "top-left": 0.0233,
+            "top-right": 0.7404,
+            "bottom-left": 0.0156,
+            "bottom-right": 0.137,
+            "not visible": 0.0837
+          },
+          "latency_ms": 252.08
+        },
+        {
+          "pass": 3,
+          "crop": [
+            768,
+            0,
+            1024,
+            192
+          ],
+          "choice": "top-right",
+          "expected": "top-right",
+          "correct": true,
+          "probabilities": {
+            "top-left": 0.1068,
+            "top-right": 0.7586,
+            "bottom-left": 0.015,
+            "bottom-right": 0.0209,
+            "not visible": 0.0987
+          },
+          "latency_ms": 254.96
+        },
+        {
+          "pass": 4,
+          "crop": [
+            896,
+            0,
+            1024,
+            96
+          ],
+          "choice": "bottom-left",
+          "expected": "bottom-left",
+          "correct": true,
+          "probabilities": {
+            "top-left": 0.0271,
+            "top-right": 0.109,
+            "bottom-left": 0.58,
+            "bottom-right": 0.1783,
+            "not visible": 0.1056
+          },
+          "latency_ms": 247.82
+        },
+        {
+          "pass": 5,
+          "crop": [
+            896,
+            48,
+            960,
+            96
+          ],
+          "choice": "not visible",
+          "expected": "bottom-left",
+          "correct": false,
+          "probabilities": {
+            "top-left": 0.0385,
+            "top-right": 0.349,
+            "bottom-left": 0.0327,
+            "bottom-right": 0.1064,
+            "not visible": 0.4733
+          },
+          "latency_ms": 253.26
+        }
+      ]
+    },
+    "close_position": {
+      "task": "Close the selected trading position.",
+      "target_box": [
+        824,
+        680,
+        987,
+        721
+      ],
+      "target_centre": [
+        905,
+        700
+      ],
+      "predicted_click": null,
+      "click_hits_target": false,
+      "click_error_pixels": null,
+      "total_latency_ms": 1337.87,
+      "steps": [
+        {
+          "pass": 1,
+          "crop": [
+            0,
+            0,
+            1024,
+            768
+          ],
+          "choice": "bottom-right",
+          "expected": "bottom-right",
+          "correct": true,
+          "probabilities": {
+            "top-left": 0.0062,
+            "top-right": 0.0431,
+            "bottom-left": 0.0301,
+            "bottom-right": 0.8585,
+            "not visible": 0.0622
+          },
+          "latency_ms": 353.6
+        },
+        {
+          "pass": 2,
+          "crop": [
+            512,
+            384,
+            1024,
+            768
+          ],
+          "choice": "bottom-right",
+          "expected": "bottom-right",
+          "correct": true,
+          "probabilities": {
+            "top-left": 0.0005,
+            "top-right": 0.0013,
+            "bottom-left": 0.003,
+            "bottom-right": 0.9894,
+            "not visible": 0.0059
+          },
+          "latency_ms": 244.38
+        },
+        {
+          "pass": 3,
+          "crop": [
+            768,
+            576,
+            1024,
+            768
+          ],
+          "choice": "bottom-left",
+          "expected": "bottom-right",
+          "correct": false,
+          "probabilities": {
+            "top-left": 0.0077,
+            "top-right": 0.0186,
+            "bottom-left": 0.7089,
+            "bottom-right": 0.1569,
+            "not visible": 0.1079
+          },
+          "latency_ms": 249.09
+        },
+        {
+          "pass": 4,
+          "crop": [
+            768,
+            672,
+            896,
+            768
+          ],
+          "choice": "top-right",
+          "expected": "not visible",
+          "correct": false,
+          "probabilities": {
+            "top-left": 0.017,
+            "top-right": 0.8733,
+            "bottom-left": 0.0199,
+            "bottom-right": 0.0459,
+            "not visible": 0.0438
+          },
+          "latency_ms": 246.32
+        },
+        {
+          "pass": 5,
+          "crop": [
+            832,
+            672,
+            896,
+            720
+          ],
+          "choice": "not visible",
+          "expected": "not visible",
+          "correct": true,
+          "probabilities": {
+            "top-left": 0.036,
+            "top-right": 0.1515,
+            "bottom-left": 0.1871,
+            "bottom-right": 0.2384,
+            "not visible": 0.387
+          },
+          "latency_ms": 244.48
+        }
+      ]
+    }
+  }
+}

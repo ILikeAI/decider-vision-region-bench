@@ -1,0 +1,122 @@
+{
+  "model_load_seconds": 11.91,
+  "image_size": [
+    1280,
+    504
+  ],
+  "options": [
+    "The requested outcome is visibly present",
+    "A different outcome is visibly present",
+    "The interface is still loading or processing",
+    "The screenshots do not show enough to tell"
+  ],
+  "correct": 3,
+  "total": 8,
+  "median_latency_ms": 585.12,
+  "results": [
+    {
+      "case": "chart_opened",
+      "expected": "The requested outcome is visibly present",
+      "predicted": "The requested outcome is visibly present",
+      "correct": true,
+      "probabilities": {
+        "The requested outcome is visibly present": 0.7253,
+        "A different outcome is visibly present": 0.2282,
+        "The interface is still loading or processing": 0.0187,
+        "The screenshots do not show enough to tell": 0.0277
+      },
+      "latency_ms": 687.05
+    },
+    {
+      "case": "chart_no_change",
+      "expected": "The screenshots do not show enough to tell",
+      "predicted": "The requested outcome is visibly present",
+      "correct": false,
+      "probabilities": {
+        "The requested outcome is visibly present": 0.565,
+        "A different outcome is visibly present": 0.3374,
+        "The interface is still loading or processing": 0.0311,
+        "The screenshots do not show enough to tell": 0.0664
+      },
+      "latency_ms": 586.19
+    },
+    {
+      "case": "chart_loading",
+      "expected": "The interface is still loading or processing",
+      "predicted": "The interface is still loading or processing",
+      "correct": true,
+      "probabilities": {
+        "The requested outcome is visibly present": 0.0342,
+        "A different outcome is visibly present": 0.0506,
+        "The interface is still loading or processing": 0.9031,
+        "The screenshots do not show enough to tell": 0.0122
+      },
+      "latency_ms": 588.06
+    },
+    {
+      "case": "chart_wrong_position_closed",
+      "expected": "A different outcome is visibly present",
+      "predicted": "The requested outcome is visibly present",
+      "correct": false,
+      "probabilities": {
+        "The requested outcome is visibly present": 0.4795,
+        "A different outcome is visibly present": 0.4069,
+        "The interface is still loading or processing": 0.0353,
+        "The screenshots do not show enough to tell": 0.0783
+      },
+      "latency_ms": 583.92
+    },
+    {
+      "case": "window_closed",
+      "expected": "The requested outcome is visibly present",
+      "predicted": "A different outcome is visibly present",
+      "correct": false,
+      "probabilities": {
+        "The requested outcome is visibly present": 0.0722,
+        "A different outcome is visibly present": 0.546,
+        "The interface is still loading or processing": 0.2073,
+        "The screenshots do not show enough to tell": 0.1745
+      },
+      "latency_ms": 581.46
+    },
+    {
+      "case": "window_wrong_position_closed",
+      "expected": "A different outcome is visibly present",
+      "predicted": "The screenshots do not show enough to tell",
+      "correct": false,
+      "probabilities": {
+        "The requested outcome is visibly present": 0.0566,
+        "A different outcome is visibly present": 0.399,
+        "The interface is still loading or processing": 0.1198,
+        "The screenshots do not show enough to tell": 0.4247
+      },
+      "latency_ms": 584.06
+    },
+    {
+      "case": "position_closed",
+      "expected": "The requested outcome is visibly present",
+      "predicted": "A different outcome is visibly present",
+      "correct": false,
+      "probabilities": {
+        "The requested outcome is visibly present": 0.2444,
+        "A different outcome is visibly present": 0.6592,
+        "The interface is still loading or processing": 0.0248,
+        "The screenshots do not show enough to tell": 0.0717
+      },
+      "latency_ms": 583.16
+    },
+    {
+      "case": "save_no_feedback",
+      "expected": "The screenshots do not show enough to tell",
+      "predicted": "The screenshots do not show enough to tell",
+      "correct": true,
+      "probabilities": {
+        "The requested outcome is visibly present": 0.0801,
+        "A different outcome is visibly present": 0.2667,
+        "The interface is still loading or processing": 0.0929,
+        "The screenshots do not show enough to tell": 0.5603
+      },
+      "latency_ms": 587.74
+    }
+  ]
+}

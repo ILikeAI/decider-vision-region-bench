@@ -1,0 +1,249 @@
+{
+  "model_load_seconds": 10.59,
+  "guided": true,
+  "tasks": {
+    "close_window": {
+      "task": "Close the application window.",
+      "target_box": [
+        12,
+        11,
+        34,
+        33
+      ],
+      "target_centre": [
+        23,
+        22
+      ],
+      "predicted_click": null,
+      "click_hits_target": false,
+      "click_error_pixels": null,
+      "total_latency_ms": 676.32,
+      "steps": [
+        {
+          "pass": 1,
+          "crop": [
+            0,
+            0,
+            1024,
+            768
+          ],
+          "choice": "not visible",
+          "expected": "top-left",
+          "correct": false,
+          "probabilities": {
+            "top-left": 0.0324,
+            "top-right": 0.1486,
+            "bottom-left": 0.0457,
+            "bottom-right": 0.208,
+            "not visible": 0.5653
+          },
+          "latency_ms": 676.32
+        }
+      ]
+    },
+    "new_chart": {
+      "task": "Open a new chart.",
+      "target_box": [
+        832,
+        57,
+        994,
+        94
+      ],
+      "target_centre": [
+        913,
+        75
+      ],
+      "predicted_click": [
+        928,
+        72
+      ],
+      "click_hits_target": true,
+      "click_error_pixels": 15.3,
+      "total_latency_ms": 1143.95,
+      "steps": [
+        {
+          "pass": 1,
+          "crop": [
+            0,
+            0,
+            1024,
+            768
+          ],
+          "choice": "top-right",
+          "expected": "top-right",
+          "correct": true,
+          "probabilities": {
+            "top-left": 0.0124,
+            "top-right": 0.8298,
+            "bottom-left": 0.007,
+            "bottom-right": 0.0547,
+            "not visible": 0.0961
+          },
+          "latency_ms": 325.51
+        },
+        {
+          "pass": 2,
+          "crop": [
+            512,
+            0,
+            1024,
+            384
+          ],
+          "choice": "top-right",
+          "expected": "top-right",
+          "correct": true,
+          "probabilities": {
+            "top-left": 0.0229,
+            "top-right": 0.6684,
+            "bottom-left": 0.0166,
+            "bottom-right": 0.1625,
+            "not visible": 0.1296
+          },
+          "latency_ms": 275.82
+        },
+        {
+          "pass": 3,
+          "crop": [
+            768,
+            0,
+            1024,
+            192
+          ],
+          "choice": "top-right",
+          "expected": "top-right",
+          "correct": true,
+          "probabilities": {
+            "top-left": 0.1353,
+            "top-right": 0.6763,
+            "bottom-left": 0.0216,
+            "bottom-right": 0.0195,
+            "not visible": 0.1474
+          },
+          "latency_ms": 267.84
+        },
+        {
+          "pass": 4,
+          "crop": [
+            896,
+            0,
+            1024,
+            96
+          ],
+          "choice": "bottom-left",
+          "expected": "bottom-left",
+          "correct": true,
+          "probabilities": {
+            "top-left": 0.0035,
+            "top-right": 0.0138,
+            "bottom-left": 0.8312,
+            "bottom-right": 0.089,
+            "not visible": 0.0626
+          },
+          "latency_ms": 274.78
+        }
+      ]
+    },
+    "close_position": {
+      "task": "Close the selected trading position.",
+      "target_box": [
+        824,
+        680,
+        987,
+        721
+      ],
+      "target_centre": [
+        905,
+        700
+      ],
+      "predicted_click": [
+        864,
+        696
+      ],
+      "click_hits_target": true,
+      "click_error_pixels": 41.2,
+      "total_latency_ms": 1132.75,
+      "steps": [
+        {
+          "pass": 1,
+          "crop": [
+            0,
+            0,
+            1024,
+            768
+          ],
+          "choice": "bottom-right",
+          "expected": "bottom-right",
+          "correct": true,
+          "probabilities": {
+            "top-left": 0.0044,
+            "top-right": 0.0185,
+            "bottom-left": 0.0156,
+            "bottom-right": 0.8997,
+            "not visible": 0.0617
+          },
+          "latency_ms": 330.6
+        },
+        {
+          "pass": 2,
+          "crop": [
+            512,
+            384,
+            1024,
+            768
+          ],
+          "choice": "bottom-right",
+          "expected": "bottom-right",
+          "correct": true,
+          "probabilities": {
+            "top-left": 0.0003,
+            "top-right": 0.0005,
+            "bottom-left": 0.0025,
+            "bottom-right": 0.9923,
+            "not visible": 0.0045
+          },
+          "latency_ms": 267.17
+        },
+        {
+          "pass": 3,
+          "crop": [
+            768,
+            576,
+            1024,
+            768
+          ],
+          "choice": "bottom-left",
+          "expected": "bottom-right",
+          "correct": false,
+          "probabilities": {
+            "top-left": 0.008,
+            "top-right": 0.0162,
+            "bottom-left": 0.6573,
+            "bottom-right": 0.1549,
+            "not visible": 0.1636
+          },
+          "latency_ms": 271.37
+        },
+        {
+          "pass": 4,
+          "crop": [
+            768,
+            672,
+            896,
+            768
+          ],
+          "choice": "top-right",
+          "expected": "not visible",
+          "correct": false,
+          "probabilities": {
+            "top-left": 0.0138,
+            "top-right": 0.8954,
+            "bottom-left": 0.0108,
+            "bottom-right": 0.0321,
+            "not visible": 0.0478
+          },
+          "latency_ms": 263.61
+        }
+      ]
+    }
+  }
+}

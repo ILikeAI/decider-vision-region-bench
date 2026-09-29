@@ -1,0 +1,147 @@
+{
+  "model_load_seconds": 10.67,
+  "guided": true,
+  "force_region": true,
+  "locator_only": false,
+  "fullres_first": true,
+  "oracle_first": false,
+  "show_close_x": true,
+  "tasks": {
+    "close_window": {
+      "task": "Close the application window.",
+      "target_box": [
+        12,
+        11,
+        34,
+        33
+      ],
+      "target_centre": [
+        23,
+        22
+      ],
+      "predicted_click": [
+        984,
+        162
+      ],
+      "click_hits_target": false,
+      "click_error_pixels": 971.1,
+      "total_latency_ms": 2300.68,
+      "steps": [
+        {
+          "pass": 1,
+          "crop": [
+            0,
+            0,
+            1024,
+            768
+          ],
+          "choice": "top-right",
+          "expected": "top-left",
+          "correct": false,
+          "probabilities": {
+            "top-left": 0.2549,
+            "top-right": 0.4689,
+            "bottom-left": 0.1252,
+            "bottom-right": 0.151
+          },
+          "latency_ms": 1034.94
+        },
+        {
+          "pass": 2,
+          "crop": [
+            512,
+            0,
+            1024,
+            384
+          ],
+          "choice": "top-right",
+          "expected": "not visible",
+          "correct": false,
+          "probabilities": {
+            "top-left": 0.0443,
+            "top-right": 0.5194,
+            "bottom-left": 0.0472,
+            "bottom-right": 0.389
+          },
+          "latency_ms": 307.87
+        },
+        {
+          "pass": 3,
+          "crop": [
+            768,
+            0,
+            1024,
+            192
+          ],
+          "choice": "bottom-right",
+          "expected": "not visible",
+          "correct": false,
+          "probabilities": {
+            "top-left": 0.0359,
+            "top-right": 0.2981,
+            "bottom-left": 0.0397,
+            "bottom-right": 0.6263
+          },
+          "latency_ms": 229.36
+        },
+        {
+          "pass": 4,
+          "crop": [
+            896,
+            96,
+            1024,
+            192
+          ],
+          "choice": "bottom-right",
+          "expected": "not visible",
+          "correct": false,
+          "probabilities": {
+            "top-left": 0.0057,
+            "top-right": 0.133,
+            "bottom-left": 0.0077,
+            "bottom-right": 0.8536
+          },
+          "latency_ms": 231.05
+        },
+        {
+          "pass": 5,
+          "crop": [
+            960,
+            144,
+            1024,
+            192
+          ],
+          "choice": "top-left",
+          "expected": "not visible",
+          "correct": false,
+          "probabilities": {
+            "top-left": 0.3996,
+            "top-right": 0.3016,
+            "bottom-left": 0.1447,
+            "bottom-right": 0.1541
+          },
+          "latency_ms": 236.23
+        },
+        {
+          "pass": 6,
+          "crop": [
+            960,
+            144,
+            992,
+            168
+          ],
+          "choice": "bottom-right",
+          "expected": "not visible",
+          "correct": false,
+          "probabilities": {
+            "top-left": 0.0214,
+            "top-right": 0.4441,
+            "bottom-left": 0.0351,
+            "bottom-right": 0.4994
+          },
+          "latency_ms": 261.23
+        }
+      ]
+    }
+  }
+}

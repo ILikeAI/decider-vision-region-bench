@@ -1,0 +1,8 @@
+torch>=2.14
+torchvision>=0.29
+transformers>=5.17
+huggingface-hub>=1.33
+pillow>=12
+numpy<2
+safetensors>=0.8
+jinja2>=3.1
