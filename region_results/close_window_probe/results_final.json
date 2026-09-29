@@ -1,0 +1,643 @@
+{
+  "model_load_seconds": 5.25,
+  "start_rect": [
+    0,
+    0,
+    256,
+    192
+  ],
+  "target_box": [
+    12,
+    11,
+    34,
+    33
+  ],
+  "target_centre": [
+    23,
+    22
+  ],
+  "candidate_count_per_level": 4,
+  "determinism": {
+    "repetitions": 1,
+    "chosen_regions": [
+      "top-left"
+    ],
+    "scores": [
+      [
+        0.0162774604,
+        0.015543648,
+        0.0050998181,
+        0.008380454
+      ]
+    ],
+    "per_region": [
+      {
+        "region": "top-left",
+        "min": 0.016277460381388664,
+        "max": 0.016277460381388664,
+        "range": 0.0,
+        "unique_rounded_10dp": 1
+      },
+      {
+        "region": "top-right",
+        "min": 0.015543648041784763,
+        "max": 0.015543648041784763,
+        "range": 0.0,
+        "unique_rounded_10dp": 1
+      },
+      {
+        "region": "bottom-left",
+        "min": 0.005099818110466003,
+        "max": 0.005099818110466003,
+        "range": 0.0,
+        "unique_rounded_10dp": 1
+      },
+      {
+        "region": "bottom-right",
+        "min": 0.008380454033613205,
+        "max": 0.008380454033613205,
+        "range": 0.0,
+        "unique_rounded_10dp": 1
+      }
+    ],
+    "latency_median_ms": 656.7
+  },
+  "methods": {
+    "binary_semantic_original": {
+      "steps": [
+        {
+          "pass": 3,
+          "parent": [
+            0,
+            0,
+            256,
+            192
+          ],
+          "expected": "top-left",
+          "chosen": "top-left",
+          "correct": true,
+          "scores": {
+            "top-left": 0.016277,
+            "top-right": 0.015544,
+            "bottom-left": 0.0051,
+            "bottom-right": 0.00838
+          },
+          "best_score": 0.016277,
+          "margin": 0.000734,
+          "latency_ms": 664.16
+        },
+        {
+          "pass": 4,
+          "parent": [
+            0,
+            0,
+            128,
+            96
+          ],
+          "expected": "top-left",
+          "chosen": "bottom-left",
+          "correct": false,
+          "scores": {
+            "top-left": 0.014392,
+            "top-right": 0.007346,
+            "bottom-left": 0.020332,
+            "bottom-right": 0.020332
+          },
+          "best_score": 0.020332,
+          "margin": 0.0,
+          "latency_ms": 666.03
+        },
+        {
+          "pass": 5,
+          "parent": [
+            0,
+            48,
+            64,
+            96
+          ],
+          "expected": "top-left",
+          "chosen": "top-left",
+          "correct": true,
+          "scores": {
+            "top-left": 0.020332,
+            "top-right": 0.020332,
+            "bottom-left": 0.020332,
+            "bottom-right": 0.020332
+          },
+          "best_score": 0.020332,
+          "margin": 0.0,
+          "latency_ms": 673.51
+        }
+      ],
+      "predicted_click": [
+        16,
+        60
+      ],
+      "click_hits_target": false,
+      "click_error_pixels": 38.64,
+      "total_latency_ms": 2003.7
+    },
+    "binary_visual": {
+      "steps": [
+        {
+          "pass": 3,
+          "parent": [
+            0,
+            0,
+            256,
+            192
+          ],
+          "expected": "top-left",
+          "chosen": "top-left",
+          "correct": true,
+          "scores": {
+            "top-left": 0.956309,
+            "top-right": 0.032344,
+            "bottom-left": 0.056652,
+            "bottom-right": 0.039343
+          },
+          "best_score": 0.956309,
+          "margin": 0.899656,
+          "latency_ms": 671.6
+        },
+        {
+          "pass": 4,
+          "parent": [
+            0,
+            0,
+            128,
+            96
+          ],
+          "expected": "top-left",
+          "chosen": "top-left",
+          "correct": true,
+          "scores": {
+            "top-left": 0.799442,
+            "top-right": 0.076961,
+            "bottom-left": 0.058346,
+            "bottom-right": 0.058346
+          },
+          "best_score": 0.799442,
+          "margin": 0.722481,
+          "latency_ms": 682.87
+        },
+        {
+          "pass": 5,
+          "parent": [
+            0,
+            0,
+            64,
+            48
+          ],
+          "expected": "top-left",
+          "chosen": "top-right",
+          "correct": false,
+          "scores": {
+            "top-left": 0.216012,
+            "top-right": 0.815233,
+            "bottom-left": 0.281406,
+            "bottom-right": 0.4436
+          },
+          "best_score": 0.815233,
+          "margin": 0.371632,
+          "latency_ms": 663.87
+        }
+      ],
+      "predicted_click": [
+        48,
+        12
+      ],
+      "click_hits_target": false,
+      "click_error_pixels": 26.93,
+      "total_latency_ms": 2018.34
+    },
+    "grid_semantic": {
+      "steps": [
+        {
+          "pass": 3,
+          "parent": [
+            0,
+            0,
+            256,
+            192
+          ],
+          "expected": "top-left",
+          "chosen": "top-left",
+          "correct": true,
+          "scores": {
+            "top-left": 0.889128,
+            "top-right": 0.092984,
+            "bottom-left": 0.012882,
+            "bottom-right": 0.005006
+          },
+          "best_score": 0.889128,
+          "margin": 0.796144,
+          "latency_ms": 339.81
+        },
+        {
+          "pass": 4,
+          "parent": [
+            0,
+            0,
+            128,
+            96
+          ],
+          "expected": "top-left",
+          "chosen": "top-left",
+          "correct": true,
+          "scores": {
+            "top-left": 0.93408,
+            "top-right": 0.063565,
+            "bottom-left": 0.001579,
+            "bottom-right": 0.000776
+          },
+          "best_score": 0.93408,
+          "margin": 0.870516,
+          "latency_ms": 229.35
+        },
+        {
+          "pass": 5,
+          "parent": [
+            0,
+            0,
+            64,
+            48
+          ],
+          "expected": "top-left",
+          "chosen": "top-left",
+          "correct": true,
+          "scores": {
+            "top-left": 0.417675,
+            "top-right": 0.330408,
+            "bottom-left": 0.162291,
+            "bottom-right": 0.089626
+          },
+          "best_score": 0.417675,
+          "margin": 0.087267,
+          "latency_ms": 230.91
+        }
+      ],
+      "predicted_click": [
+        16,
+        12
+      ],
+      "click_hits_target": true,
+      "click_error_pixels": 12.21,
+      "total_latency_ms": 800.07
+    },
+    "grid_visual": {
+      "steps": [
+        {
+          "pass": 3,
+          "parent": [
+            0,
+            0,
+            256,
+            192
+          ],
+          "expected": "top-left",
+          "chosen": "top-left",
+          "correct": true,
+          "scores": {
+            "top-left": 0.723649,
+            "top-right": 0.044489,
+            "bottom-left": 0.225934,
+            "bottom-right": 0.005928
+          },
+          "best_score": 0.723649,
+          "margin": 0.497715,
+          "latency_ms": 231.76
+        },
+        {
+          "pass": 4,
+          "parent": [
+            0,
+            0,
+            128,
+            96
+          ],
+          "expected": "top-left",
+          "chosen": "top-left",
+          "correct": true,
+          "scores": {
+            "top-left": 0.924423,
+            "top-right": 0.059096,
+            "bottom-left": 0.014596,
+            "bottom-right": 0.001885
+          },
+          "best_score": 0.924423,
+          "margin": 0.865327,
+          "latency_ms": 227.48
+        },
+        {
+          "pass": 5,
+          "parent": [
+            0,
+            0,
+            64,
+            48
+          ],
+          "expected": "top-left",
+          "chosen": "top-left",
+          "correct": true,
+          "scores": {
+            "top-left": 0.633068,
+            "top-right": 0.02235,
+            "bottom-left": 0.333604,
+            "bottom-right": 0.010978
+          },
+          "best_score": 0.633068,
+          "margin": 0.299465,
+          "latency_ms": 228.22
+        }
+      ],
+      "predicted_click": [
+        16,
+        12
+      ],
+      "click_hits_target": true,
+      "click_error_pixels": 12.21,
+      "total_latency_ms": 687.46
+    },
+    "labelled_grid_visual": {
+      "steps": [
+        {
+          "pass": 3,
+          "parent": [
+            0,
+            0,
+            256,
+            192
+          ],
+          "expected": "top-left",
+          "chosen": "top-left",
+          "correct": true,
+          "scores": {
+            "top-left": 0.935816,
+            "top-right": 0.016743,
+            "bottom-left": 0.042755,
+            "bottom-right": 0.004686
+          },
+          "best_score": 0.935816,
+          "margin": 0.893062,
+          "latency_ms": 254.49
+        },
+        {
+          "pass": 4,
+          "parent": [
+            0,
+            0,
+            128,
+            96
+          ],
+          "expected": "top-left",
+          "chosen": "top-left",
+          "correct": true,
+          "scores": {
+            "top-left": 0.927498,
+            "top-right": 0.02233,
+            "bottom-left": 0.046905,
+            "bottom-right": 0.003268
+          },
+          "best_score": 0.927498,
+          "margin": 0.880593,
+          "latency_ms": 230.8
+        },
+        {
+          "pass": 5,
+          "parent": [
+            0,
+            0,
+            64,
+            48
+          ],
+          "expected": "top-left",
+          "chosen": "bottom-left",
+          "correct": false,
+          "scores": {
+            "top-left": 0.10494,
+            "top-right": 0.005349,
+            "bottom-left": 0.885546,
+            "bottom-right": 0.004165
+          },
+          "best_score": 0.885546,
+          "margin": 0.780605,
+          "latency_ms": 233.38
+        }
+      ],
+      "predicted_click": [
+        16,
+        36
+      ],
+      "click_hits_target": false,
+      "click_error_pixels": 15.65,
+      "total_latency_ms": 718.67
+    },
+    "highlighted_visual": {
+      "steps": [
+        {
+          "pass": 3,
+          "parent": [
+            0,
+            0,
+            256,
+            192
+          ],
+          "expected": "top-left",
+          "chosen": "top-left",
+          "correct": true,
+          "scores": {
+            "top-left": 0.744656,
+            "top-right": 0.029091,
+            "bottom-left": 0.320821,
+            "bottom-right": 0.05301
+          },
+          "best_score": 0.744656,
+          "margin": 0.423835,
+          "latency_ms": 726.8
+        },
+        {
+          "pass": 4,
+          "parent": [
+            0,
+            0,
+            128,
+            96
+          ],
+          "expected": "top-left",
+          "chosen": "top-left",
+          "correct": true,
+          "scores": {
+            "top-left": 0.939025,
+            "top-right": 0.028871,
+            "bottom-left": 0.021125,
+            "bottom-right": 0.005469
+          },
+          "best_score": 0.939025,
+          "margin": 0.910154,
+          "latency_ms": 686.84
+        },
+        {
+          "pass": 5,
+          "parent": [
+            0,
+            0,
+            64,
+            48
+          ],
+          "expected": "top-left",
+          "chosen": "top-left",
+          "correct": true,
+          "scores": {
+            "top-left": 0.847968,
+            "top-right": 0.585101,
+            "bottom-left": 0.31237,
+            "bottom-right": 0.247987
+          },
+          "best_score": 0.847968,
+          "margin": 0.262867,
+          "latency_ms": 693.8
+        }
+      ],
+      "predicted_click": [
+        16,
+        12
+      ],
+      "click_hits_target": true,
+      "click_error_pixels": 12.21,
+      "total_latency_ms": 2107.44
+    }
+  },
+  "adaptive_hybrid": {
+    "policy": "Switch permanently to contextual grid when binary best < 0.10 or margin < 0.05",
+    "steps": [
+      {
+        "pass": 1,
+        "mode": "parallel_binary_crops",
+        "parent": [
+          0,
+          0,
+          1024,
+          768
+        ],
+        "expected": "top-left",
+        "chosen": "top-left",
+        "correct": true,
+        "scores": {
+          "top-left": 0.190724,
+          "top-right": 0.02976,
+          "bottom-left": 0.002591,
+          "bottom-right": 0.03359
+        },
+        "best_score": 0.190724,
+        "margin": 0.157135,
+        "binary_probe_best": 0.190724,
+        "binary_probe_margin": 0.157135,
+        "latency_ms": 681.87
+      },
+      {
+        "pass": 2,
+        "mode": "parallel_binary_crops",
+        "parent": [
+          0,
+          0,
+          512,
+          384
+        ],
+        "expected": "top-left",
+        "chosen": "top-left",
+        "correct": true,
+        "scores": {
+          "top-left": 0.27048,
+          "top-right": 0.016029,
+          "bottom-left": 0.002269,
+          "bottom-right": 0.007636
+        },
+        "best_score": 0.27048,
+        "margin": 0.254451,
+        "binary_probe_best": 0.27048,
+        "binary_probe_margin": 0.254451,
+        "latency_ms": 663.36
+      },
+      {
+        "pass": 3,
+        "mode": "contextual_grid",
+        "parent": [
+          0,
+          0,
+          256,
+          192
+        ],
+        "expected": "top-left",
+        "chosen": "top-left",
+        "correct": true,
+        "scores": {
+          "top-left": 0.723649,
+          "top-right": 0.044489,
+          "bottom-left": 0.225934,
+          "bottom-right": 0.005928
+        },
+        "best_score": 0.723649,
+        "margin": 0.497715,
+        "binary_probe_best": 0.016277,
+        "binary_probe_margin": 0.000734,
+        "latency_ms": 914.6
+      },
+      {
+        "pass": 4,
+        "mode": "contextual_grid",
+        "parent": [
+          0,
+          0,
+          128,
+          96
+        ],
+        "expected": "top-left",
+        "chosen": "top-left",
+        "correct": true,
+        "scores": {
+          "top-left": 0.924423,
+          "top-right": 0.059096,
+          "bottom-left": 0.014596,
+          "bottom-right": 0.001885
+        },
+        "best_score": 0.924423,
+        "margin": 0.865327,
+        "binary_probe_best": null,
+        "binary_probe_margin": null,
+        "latency_ms": 227.11
+      },
+      {
+        "pass": 5,
+        "mode": "contextual_grid",
+        "parent": [
+          0,
+          0,
+          64,
+          48
+        ],
+        "expected": "top-left",
+        "chosen": "top-left",
+        "correct": true,
+        "scores": {
+          "top-left": 0.633068,
+          "top-right": 0.02235,
+          "bottom-left": 0.333604,
+          "bottom-right": 0.010978
+        },
+        "best_score": 0.633068,
+        "margin": 0.299465,
+        "binary_probe_best": null,
+        "binary_probe_margin": null,
+        "latency_ms": 226.69
+      }
+    ],
+    "predicted_click": [
+      16,
+      12
+    ],
+    "click_hits_target": true,
+    "click_error_pixels": 12.21,
+    "total_latency_ms": 2713.63
+  }
+}

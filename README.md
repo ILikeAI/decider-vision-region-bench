@@ -29,6 +29,8 @@ The four way guided search correctly localized the large **New Chart** and **Clo
 
 See [`region_results/README.md`](region_results/README.md) and [`region_results/summary.png`](region_results/summary.png) for the run details and visualizations.
 
+A targeted follow-up found that the close-window miss was deterministic rather than a sampling fluke. Switching from independent binary crop scoring to a contextual four-way grid when the binary scores became weak recovered the small control. See [`region_results/close_window_probe/README.md`](region_results/close_window_probe/README.md).
+
 ### Visual outcome verification
 
 On eight generated before and after pairs, the initial questions classified 3/8 correctly. Clearer state specific questions improved that to 5/8, with median inference latency of 563 ms. This is promising as a cheap verifier, but it is not reliable enough to be the sole success signal for UI automation.
@@ -57,6 +59,9 @@ git clone https://github.com/Mapika/decider.git decider
 
 # Parallel four region scoring
 .venv/bin/python region_score_search.py
+
+# Probe the small window-close failure and alternative policies
+.venv/bin/python close_window_probe.py
 
 # Before and after visual verification
 .venv/bin/python visual_verify.py
