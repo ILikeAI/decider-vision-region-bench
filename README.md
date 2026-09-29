@@ -29,7 +29,7 @@ The four way guided search correctly localized the large **New Chart** and **Clo
 
 See [`region_results/README.md`](region_results/README.md) and [`region_results/summary.png`](region_results/summary.png) for the run details and visualizations.
 
-A targeted follow-up found that the close-window miss was deterministic rather than a sampling fluke. Switching from independent binary crop scoring to a contextual four-way grid when the binary scores became weak recovered the small control. See [`region_results/close_window_probe/README.md`](region_results/close_window_probe/README.md).
+A targeted follow-up found that the close-window miss was deterministic rather than a sampling fluke. The experiment first enlarged and batched four screen tiles so the small control occupied more visual tokens. Switching to a contextual four-way grid when every tile received a weak yes probability recovered the control. See [`region_results/close_window_probe/README.md`](region_results/close_window_probe/README.md).
 
 ### Visual outcome verification
 

@@ -2,6 +2,19 @@
 
 This follow-up isolates the 256 × 192 parent region where the original parallel crop search became ambiguous. It checks repeatability and compares six ways of selecting the next quadrant.
 
+## What “parallel binary crops” means
+
+The full screen is divided into four quarter-size image tiles. Each tile is enlarged to the model's input size, so a small control occupies more visual tokens than it would in the full screenshot. The four enlarged images are placed in one model batch. Each image independently receives the same yes/no question: does this tile contain the requested control?
+
+“Parallel” means one batched model forward pass over four images. It does not mean four processes, and the model is not shown four grid locations inside one image. The returned percentage is the model's softmax probability for `yes` versus `no` on that tile.
+
+The tiling idea worked as intended during coarse search: the correct quarter was much stronger than the other three. The policy error was treating the largest percentage as a valid positive detection even when all four tiles were classified as `no`. A production policy should distinguish these outcomes:
+
+1. One tile passes a calibrated detection threshold: descend into it.
+2. Several tiles pass: retain the top candidates or their union.
+3. No tile passes, but one is clearly stronger: treat it as a weak proposal and use a contextual comparison before descending.
+4. No tile passes and the scores are similar: abstain, change the tiling, or escalate.
+
 ## Determinism
 
 The exact original four-crop inference was repeated 20 times in one loaded process and 10 more times after loading the model in a fresh process. Every probability was identical to at least ten decimal places, and every repetition chose the same quadrant.
@@ -36,7 +49,7 @@ The large A/B/C/D labels eventually obscured the small target, demonstrating tha
 
 The successful hybrid starts from the full 1024 × 768 screenshot:
 
-1. Score four separate crops while the leading yes score is at least 0.10 and leads the runner-up by at least 0.05.
+1. Enlarge and batch four tiles while the leading yes score is at least 0.10 and leads the runner-up by at least 0.05.
 2. When that evidence collapses, switch permanently to one contextual four-way grid image.
 3. Continue until the region is click-sized.
 
